@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://your-frontend.onrender.com',
+  origin: 'https://fullstacttodo-5.onrender.com',
   credentials: true
 }));
 app.use(express.json());
