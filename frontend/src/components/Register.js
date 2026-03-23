@@ -37,7 +37,7 @@ const Register = ({ onRegister }) => {
 
     try {
       const { confirmPassword, ...registerData } = formData;
-      const response = await axios.post('http://localhost:5000/api/auth/register', registerData);
+      const response = await axios.post('https://fullstacttodo-4.onrender.com/api/auth/register', registerData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       onRegister(response.data.user, response.data.token);
